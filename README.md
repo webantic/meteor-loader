@@ -24,8 +24,8 @@ There are two main hoops to jump through for this to work;
 var wrapExports = require('@webantic/meteor-deps').wrapExports
 
 var moduleExports = {
-  thing1: require('./thing1.js),
-  thing2: require('./thing2.js)
+  thing1: require('./thing1.js'),
+  thing2: require('./thing2.js')
 }
 
 module.exports = wrapExports(module, moduleExports)
