@@ -17,7 +17,7 @@ You can use things like `Mongo` or `FlowRouter` in your node modules.
 
 First, clone this repo into your project's `/packages` directory and add `webantic:meteor-loader` to your package manifest in `/.meteor/packages`
 
-Then, there are only two real hoops to jump through for this to work;
+Then, there are only three real hoops to jump through for this to work;
 
 ### 1. You must wrap your node module's exports:
 
@@ -47,7 +47,7 @@ export {
 }
 ```
 
-### 2. You must access your Meteor dependencies via the @webantic/meteor-deps module
+### 2. You must access your Meteor dependencies via the @webantic/meteor-deps module:
 
 ```js
 var meteorRequire = require('@webantic/meteor-deps').get
@@ -64,4 +64,17 @@ meteorRequire('Meteor').then(function (Meteor) {
 })
 
 // The second approach opens the possibility of wrapping your module in a self-invoking anonymous async function
+```
+
+### 3. You must declare your dependencies in your module's package.json:
+
+```json
+{
+  "name": "my-cool-module",
+  ...
+  "meteorDependencies": {
+    "kadira:flow-router": "client",
+    "meteor": ["client", "server"]
+  }
+}
 ```
