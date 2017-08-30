@@ -13,7 +13,7 @@ Package.registerBuildPlugin({
   name: 'loader',
   sources: ['buildPackage.js', 'buildInjector.js', 'loader.js'],
   npmDependencies: {
-    '@webantic/dependency-mapper': '1.1.2',
+    '@webantic/dependency-mapper': '1.1.4',
     'mkdirp': '0.5.1'
   }
 })

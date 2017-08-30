@@ -1,7 +1,7 @@
 /* global buildInjectorJs:true */
 
 buildInjectorJs = function buildInjectorJs (deps, moduleNames) {
-  var str = `const deps = {}\n\n`
+  var str = `let deps = {}\n\n`
 
   var i = 0
   for (var key in deps) {
