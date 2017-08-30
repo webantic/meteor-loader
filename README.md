@@ -15,7 +15,9 @@ You can use things like `Mongo` or `FlowRouter` in your node modules.
 
 ## How??
 
-There are two main hoops to jump through for this to work;
+First, clone this repo into your project's `/packages` directory and add `webantic:meteor-loader` to your package manifest in `/.meteor/packages`
+
+Then, there are only two real hoops to jump through for this to work;
 
 ### 1. You must wrap your node module's exports:
 
