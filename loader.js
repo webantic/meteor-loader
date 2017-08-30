@@ -64,4 +64,3 @@ if (Object.keys(npmDependencies.allMeteorDependencies).length) {
 if (process.env.INJECTOR_DEBUG) {
   console.log('---- WEBANTIC:LOADER ----')
 }
-
