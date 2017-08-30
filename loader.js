@@ -32,6 +32,8 @@ if (Object.keys(npmDependencies.allMeteorDependencies).length) {
       }
     }
 
+    console.log('*** Generating webantic:node-injector package ***')
+
     mkdirp.sync(path.resolve('packages/node-injector'))
 
     const packageJs = buildPackageJs(npmDependencies.allMeteorDependencies)
