@@ -22,7 +22,7 @@ You can use things like `Mongo` or `FlowRouter` in your node modules.
 
 ## How??
 
-First, clone this repo into your project's `/packages` directory and add `webantic:meteor-loader` to your package manifest in `/.meteor/packages`
+First, either  run `meteor add webantic:loader` or clone this repo into your project's `/packages` directory and add `webantic:loader` to your package manifest in `/.meteor/packages`
 
 Then, there are only three real hoops to jump through for this to work;
 

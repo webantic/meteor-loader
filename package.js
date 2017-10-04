@@ -3,7 +3,7 @@
 
 Package.describe({
   name: 'webantic:loader',
-  version: '1.0.1',
+  version: '1.0.2',
   summary: 'A Meteor dependency loader',
   git: 'https://github.com/webantic/meteor-loader',
   documentation: 'README.md'
