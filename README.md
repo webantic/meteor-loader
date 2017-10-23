@@ -72,7 +72,9 @@ getDep('Meteor').then(function (Meteor) {
 {
   "name": "my-cool-module",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "@webantic/meteor-deps": "^1.1.9"
+  },
   "meteorDependencies": {
     "meteor": ["client", "server"],
     "kadira:flow-router": "client"
